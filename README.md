@@ -6,6 +6,8 @@ Seven Playwright/TypeScript scenarios connect risk-based QA, UI/API contracts, d
 
 The reference suite must pass **7/7, with zero skips and zero retries**. A separate campaign runs the same seven tests against the buggy edition and verifies exactly **4 passes and 3 known failures**: one seeded functional sorting defect and two API contract differences. A missing expected defect or an additional/different failure makes the campaign fail.
 
+Observed on 2026-10-18: **reference 7/7; comparison 4/7 with all three expected causes verified**. [First hosted run](https://github.com/Teka230/tk-automation-lab/actions/runs/39129143394), source commit `28f2a1e`.
+
 See [observed evidence](docs/EVIDENCE.md), [comparison policy](docs/COMPARISON-POLICY.md), [sorting case](docs/DEFECT-SORT-001.md), [coverage decisions](docs/AUTOMATION-DECISIONS.md) and [source contracts](docs/SOURCE-CONTRACT.md).
 
 ## Architecture and authority
@@ -69,6 +71,8 @@ All hosted requests are read-only. No user, order or shared application data is 
 ## CI and evidence
 
 The [Actions workflow](https://github.com/Teka230/tk-automation-lab/actions/workflows/playwright.yml) runs on main pushes, pull requests and manual dispatch. Separate Ubuntu 24.04 jobs install Node from `.nvmrc`, use `npm ci` and install Chromium with its system dependencies. The comparison starts only after the reference gate succeeds. Both jobs upload HTML, JSON, JUnit and available diagnostic attachments, even on failure; retention is 30 days.
+
+Both checks are required on an up-to-date PR before merging to `main`, including for administrators.
 
 Open a workflow run's **Artifacts** section and download `reference-evidence` or `comparison-evidence`. Each archive contains both reports and raw results. Extract it under the repository, locate `index.html`, then serve that report directory with `npm run report -- <directory>`. Select the sorting failure to inspect observed prices, full-page screenshot, video and trace. Artifact download requires a GitHub login; run logs and source are public. Historical run links and exact commits are in the evidence log.
 
