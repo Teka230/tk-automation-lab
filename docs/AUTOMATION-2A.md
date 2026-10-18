@@ -47,6 +47,7 @@ Cleanup failure **fails** the relevant test. There is one known black-box limit:
 ## Evidence / status
 
 - 2026-10-18: verified upstream route/controller contracts for `POST /carts`, `POST /carts/{id}`, `PUT /carts/{id}/product/quantity`, `GET /carts/{id}`, DELETE endpoints, 422 validation and `[data-test="add-to-cart"]` in upstream source.
-- Offline guard tests: **13/13 PASS** in assistant's local runtime.
-- Toolshop Docker instance: **not started here**. Playwright's new three scenarios have **not** been executed against the SUT, and no 3/3 result is claimed.
-- Existing GitHub Actions remain authoritative for the previous 7/7 + 4/7 evidence only. New coverage must not be listed as validated until local results are recorded.
+- Offline guard tests: **13/13 PASS**.
+- Local Toolshop sprint5: three isolated scenarios executed on `e1c5644` (JSON `Accept` headers required for Laravel 422 vs misleading 302→404).
+- **STABILITY-1** on `e1c5644`: **10/10 runs, 30/30 PASS, 0 retries, 0 skips**; reference gate still **7/7**. See `docs/EVIDENCE.md` and `docs/evidence/stability-1-verdict.json`.
+- Existing GitHub Actions remain authoritative for the previous 7/7 + 4/7 hosted evidence only; isolated suite stays opt-in / local-only.
