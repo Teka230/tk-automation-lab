@@ -13,7 +13,9 @@
     "test:comparison": "node scripts/run-comparison.mjs",
     "check:comparison": "node --test scripts/verify-comparison.test.mjs",
     "report": "playwright show-report",
-    "test:reference": "playwright test && node scripts/verify-reference.mjs"
+    "test:reference": "playwright test && node scripts/verify-reference.mjs",
+    "test:isolated": "playwright test --config=playwright.isolated.config.ts",
+    "check:isolated": "node --test scripts/local-sut-guard.test.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1"
