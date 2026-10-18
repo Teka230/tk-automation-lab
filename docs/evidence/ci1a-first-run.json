@@ -1,0 +1,144 @@
+{
+  "runId": 39129143394,
+  "url": "https://github.com/Teka230/tk-automation-lab/actions/runs/39129143394",
+  "event": "push",
+  "sourceCommit": "28f2a1e2d4be447378eb284992ab1c8475ea5700",
+  "conclusion": "success",
+  "createdAtUTC": "2026-10-18T12:52:56Z",
+  "updatedAtUTC": "2026-10-18T12:54:21Z",
+  "jobs": [
+    {
+      "name": "Reference gate",
+      "id": 117680517144,
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify comparison policy with synthetic reports",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install Chromium and system dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run and verify all seven reference cases",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload reference evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "name": "Known-fault comparison",
+      "id": 117680670777,
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install Chromium and system dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run buggy suite and verify exact known outcomes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload raw results and comparison verification",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "target": "reference",
+      "verdict": "reference-passed",
+      "startedAtUTC": "2026-10-18T12:53:29.216Z",
+      "node": "v22.23.3",
+      "rawPassed": 7,
+      "rawFailed": 0,
+      "retries": 0
+    },
+    {
+      "target": "comparison",
+      "verdict": "expected-outcomes-confirmed",
+      "startedAtUTC": "2026-10-18T12:54:10.501Z",
+      "node": "v22.23.3",
+      "rawPassed": 4,
+      "rawFailed": 3,
+      "retries": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "reference-evidence",
+      "id": 12136923956,
+      "sizeBytes": 206383,
+      "expiresAtUTC": "2026-11-17T12:53:36Z"
+    },
+    {
+      "name": "comparison-evidence",
+      "id": 12136794705,
+      "sizeBytes": 7834463,
+      "expiresAtUTC": "2026-11-17T12:54:18Z"
+    }
+  ],
+  "artifactInspection": "Both archives downloaded; HTML, JSON, JUnit and verification metadata checked. Comparison traces, screenshot and video present. JUnit preserves 3 comparison failures."
+}

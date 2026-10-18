@@ -14,7 +14,7 @@ The new CI tranche then added diagnostic API attachments, explicit outcome verif
 
 ## Current qualification
 
-Local and hosted CI execution links, exact commits and observed counts are recorded here after execution. The two acceptance criteria are independent:
+The first hosted execution completed successfully; its exact source commit and artifacts are recorded below. The two acceptance criteria are independent:
 
 1. Reference: all seven product tests pass with zero skipped/retried tests.
 2. Comparison: raw result is four passed / three failed; the exact known causes are verified, including the sorting defect. Any deviation fails the campaign.
@@ -30,3 +30,20 @@ Generated HTML/JSON/JUnit, screenshots, video and traces are CI artifacts, not c
 - Seventeen offline verifier checks passed. No retries or skipped product tests.
 - Current-source fingerprint and file hashes: [local summary](evidence/local-ci1a.json).
 - This local execution is distinct from the fresh hosted runners still to be observed.
+
+## First hosted run on 2026-10-18
+
+[GitHub Actions run 39129143394](https://github.com/Teka230/tk-automation-lab/actions/runs/39129143394) — event `push`, source commit [`28f2a1e`](https://github.com/Teka230/tk-automation-lab/commit/28f2a1e2d4be447378eb284992ab1c8475ea5700). Both jobs succeeded on separate fresh Ubuntu 24.04 runners.
+
+| Job | Raw passed | Raw failed | Acceptance |
+| --- | ---: | ---: | --- |
+| Reference gate | 7 | 0 | All seven named tests present; zero skips/retries |
+| Known-fault comparison | 4 | 3 | Exact sorting fault and two API differences verified |
+
+Both jobs successfully installed Node 22.23.3, ran npm ci, and installed Chromium plus system dependencies. The reference job also passed all seventeen offline verifier checks.
+
+Both artifact archives were downloaded and inspected: HTML, JSON, JUnit and verification metadata are readable; the comparison includes traces, a full-page screenshot and video. JUnit still records three comparison failures. Source commits embedded in both verification files match the tested commit. [Structured summary](evidence/ci1a-first-run.json).
+
+Artifacts are retained for 30 days (this run's artifacts expire on 2026-11-17). Use a new workflow dispatch to regenerate evidence after expiry. These documentation changes do not alter the tested suite; the run remains attributed to its exact source commit.
+
+Main branch protection requires an up-to-date PR with both checks from GitHub Actions, including for administrators. Approving reviews are not required; automated checks are not presented as human review.
