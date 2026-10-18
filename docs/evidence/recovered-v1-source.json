@@ -1,0 +1,13 @@
+{
+  "snapshot": "c42f6381b55bc1d837592d51933838a8211f11f0f689e987b1b46a05a34df3af",
+  "files": {
+    ".github/workflows/playwright.yml": "d6a9a273b857cc44230ec16859ca5776ec5770b5fbe2b38ce42cabf8e1384f27",
+    "package-lock.json": "1caf01c65e290e12afcffcaf04668312f8e14091ff09ab919db42abbf6464526",
+    "package.json": "08ad58dd0f5d1e92ed661c2fac0781cf5a25736240ec5c79e09e8dcecbad695a",
+    "playwright.config.ts": "e85893b1c5492e3e6cefea747aafd54208c38975712bb9b45964bab216a32195",
+    "src/sut.ts": "39e6b4f20845e1287c65f951e67a9d752431e0ae665bb17c2f60622341df7dbe",
+    "tests/api.spec.ts": "f628313a71b97e1b6e084b0267d93c31fe09fd3bab79f992a9623b1b75dba9e8",
+    "tests/cross-layer.spec.ts": "3830112b7e003738476c8035d79f488580249c5d7d7c0c4878e8665d65ae8b50",
+    "tests/ui.spec.ts": "8c8ffea72641c26a1c45494484717443bafd85b6a609b8d0623554b396a6c8fb"
+  }
+}

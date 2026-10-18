@@ -1,0 +1,38 @@
+{
+  "sourceSnapshotSha256": "2062e27c349abed5da2fa3dabbb039a279275f61b10bcce335bcfbb87b2547b2",
+  "files": {
+    ".github/workflows/playwright.yml": "a74a4efe026503dff29f6092f0a14645511d456979106a1a97f0f174e6340de6",
+    ".nvmrc": "6d07ac247e81cd42c2c20abf8dfe504413d6b2422e4aba9b2c975a776f155921",
+    "package-lock.json": "1caf01c65e290e12afcffcaf04668312f8e14091ff09ab919db42abbf6464526",
+    "package.json": "1226fcd6827e499d014653e86211b7b913b59bdb7bc70919d4b8879e9f6394fb",
+    "playwright.config.ts": "e85893b1c5492e3e6cefea747aafd54208c38975712bb9b45964bab216a32195",
+    "scripts/run-comparison.mjs": "9b395e2f943409ac60dc04419a30a13f1aaa496d14ccf902cae936f015edaaec",
+    "scripts/verify-comparison.mjs": "cddcc70ceee0a8af9cfa54e3a955165be6b94f203b51abeaa5ced7bdf190b3af",
+    "scripts/verify-comparison.test.mjs": "0defbd762bb3dc23d47ac783a1035367f6297ab1a9e533045eb438fb69561d87",
+    "scripts/verify-reference.mjs": "4612675f8f46e9a34454884bc4c62a50931222a05e64b20020921553d5654a3c",
+    "src/sut.ts": "39e6b4f20845e1287c65f951e67a9d752431e0ae665bb17c2f60622341df7dbe",
+    "tests/api.spec.ts": "b2c4676fe28d758e805314edb6f89b391a097d360acb6771a1f8105c28e26e69",
+    "tests/cross-layer.spec.ts": "3830112b7e003738476c8035d79f488580249c5d7d7c0c4878e8665d65ae8b50",
+    "tests/ui.spec.ts": "8c8ffea72641c26a1c45494484717443bafd85b6a609b8d0623554b396a6c8fb"
+  },
+  "node": "v22.23.3",
+  "playwright": "1.56.1",
+  "reference": {
+    "startedAtUTC": "2026-10-18T12:51:06.230Z",
+    "passed": 7,
+    "failed": 0
+  },
+  "comparison": {
+    "startedAtUTC": "2026-10-18T12:52:01.945Z",
+    "verdict": "expected-outcomes-confirmed",
+    "passed": 4,
+    "failed": 3,
+    "functionalDefects": 1,
+    "contractDifferences": 2
+  },
+  "offlineVerifierChecks": {
+    "passed": 17,
+    "failed": 0
+  },
+  "hostedCI": "pending"
+}

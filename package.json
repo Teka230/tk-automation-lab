@@ -1,0 +1,24 @@
+{
+  "name": "tk-automation-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Risk-driven UI/API test automation portfolio using an external e-commerce SUT",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api.spec.ts",
+    "test:ui": "playwright test tests/ui.spec.ts",
+    "test:cross-layer": "playwright test tests/cross-layer.spec.ts",
+    "test:regression": "playwright test --grep @regression",
+    "test:list": "playwright test --list",
+    "test:comparison": "node scripts/run-comparison.mjs",
+    "check:comparison": "node --test scripts/verify-comparison.test.mjs",
+    "report": "playwright show-report",
+    "test:reference": "playwright test && node scripts/verify-reference.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
