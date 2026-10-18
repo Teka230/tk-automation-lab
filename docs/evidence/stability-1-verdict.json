@@ -1,0 +1,395 @@
+{
+  "campaign": "STABILITY-1",
+  "sha": "e1c5644367cce9421cd89f76f67cd636364e4e86",
+  "endedAt": "2026-10-18T16:33:40.805394Z",
+  "runsCompleted": 10,
+  "runsMeetingGate": 10,
+  "tests": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "skipped": 0,
+    "retries": 0
+  },
+  "wallDurationMs": {
+    "min": 1779,
+    "max": 2790,
+    "sum": 19789,
+    "avg": 1978.9
+  },
+  "playwrightDurationMs": {
+    "min": 1275.314,
+    "max": 2088.982,
+    "avg": 1442.6
+  },
+  "acceptance": {
+    "runs_10_10": true,
+    "tests_30_30": true,
+    "retries_0": true,
+    "skips_0": true,
+    "stability_100pct_sample": true
+  },
+  "cleanup": "Fixture asserts DELETE 204; failure fails the test. No residual-cart inventory API on SUT; gate is per-owned-cart teardown.",
+  "runs": [
+    {
+      "run": 1,
+      "exitCode": 0,
+      "durationMsWall": 2790,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 2088.982
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 316
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 242
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 1168
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 2,
+      "exitCode": 0,
+      "durationMsWall": 2011,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1481.667
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 177
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 105
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 880
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 3,
+      "exitCode": 0,
+      "durationMsWall": 1900,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1358.7330000000002
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 178
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 117
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 766
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 4,
+      "exitCode": 0,
+      "durationMsWall": 1779,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1275.314
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 162
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 97
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 729
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 5,
+      "exitCode": 0,
+      "durationMsWall": 1819,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1307.528
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 173
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 108
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 744
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 6,
+      "exitCode": 0,
+      "durationMsWall": 1990,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1468.405
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 173
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 102
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 831
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 7,
+      "exitCode": 0,
+      "durationMsWall": 1978,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1460.578
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 169
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 108
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 770
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 8,
+      "exitCode": 0,
+      "durationMsWall": 1809,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1301.201
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 168
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 97
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 736
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 9,
+      "exitCode": 0,
+      "durationMsWall": 1853,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1333.031
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 173
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 106
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 744
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    },
+    {
+      "run": 10,
+      "exitCode": 0,
+      "durationMsWall": 1860,
+      "stats": {
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "duration": 1350.351
+      },
+      "tests": [
+        {
+          "title": "API adds, updates and removes a product from an owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 159
+        },
+        {
+          "title": "API rejects zero quantity and does not modify the owned cart",
+          "status": "passed",
+          "retry": 0,
+          "duration": 101
+        },
+        {
+          "title": "UI add-to-cart is observable through API and its cart is deleted",
+          "status": "passed",
+          "retry": 0,
+          "duration": 788
+        }
+      ],
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "retries": 0
+    }
+  ]
+}
